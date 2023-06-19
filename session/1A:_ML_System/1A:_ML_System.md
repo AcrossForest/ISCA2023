@@ -7,6 +7,17 @@
 |**Authors** | Cong Guo, Jiaming Tang, Weiming Hu, Jingwen Leng, Chen Zhang, Fan Yang, Yunxin Liu, Minyi Guo, Yuhao Zhu |
 |**LocalPDF** | [PDF File](Guo%20et%20al.%20-%202023%20-%20OliVe%20Accelerating%20Large%20Language%20Models%20via%20Hard.pdf) |
 
+* Outliers are important for the LLMs
+* Outliers cannot be simply removed, otherwise accuracy gets bad
+* Outlier-Aware architecture
+* Outlier-Victim Pair for aligned memory access.
+    * Outliers requires expensive datatypes to compute
+    * However, we want to quantize other weights as cheap as possible. 
+    * E.g. we want to use 4bits to store weights and use 8bits to store outliers.
+    * traditionally, outliers have to be stored in a COO fashion, which causes sparsity, hurts performance and complicates ALU designs.
+    * Olive makes it simple. you basically purge the adjacent non-outlier elements and use the space of two non-outlier elemnts to store one outlier.
+    * |weight|weight|weight|---out|lier--|
+
 
 
 
