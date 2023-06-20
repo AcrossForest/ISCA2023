@@ -6,13 +6,10 @@
 |**Time** | 2:10 PM – 2:25 PM |
 |**Authors** | Zichen Fan, Qirui Zhang, Pierre Abillama, Sara Shoouri, Changwoo Lee, David Blaauw, Hun-Seok Kim, Dennis Sylvester |
 |**LocalPDF** | [PDF File](Fan%20et%20al.%20-%202023%20-%20TaskFusion%20An%20Efficient%20Transfer%20Learning%20Archite.pdf) |
-
-
-
-
-
-
-
+* 烂
+* 现在根本没有人用这种分层finetune的方法了。
+* 使用LoRA可以不需要任何architecture修改的，以更好的性能解决这个文章中提出的所有multitask的需求。
+* 过气文章，不建议复现。
 
 
 # Inter-layer Scheduling Space Definition and Exploration for Tiled Accelerators
@@ -22,13 +19,13 @@
 |**Time** | 2:25 PM –2:40 PM |
 |**Authors** | Jingwei Cai, Yuchen Wei, Zuotong Wu, Sen Peng, Kaisheng Ma |
 |**LocalPDF** | [PDF File](Cai%20et%20al.%20-%202023%20-%20Inter-layer%20Scheduling%20Space%20Definition%20and%20Explor.pdf) |
-
-
-
-
-
-
-
+* Compile Multiple layers for a Tiled Accelerator.
+* Tiled Accelerator:
+    * A tile of Accelerator cores connected with NoC.
+    * Workloads are spatially mapped into cores on this NoC.
+* Combining multiple layers will result in larger search space and potentially exposes more optimization opportunities.
+* SA Algorithm for exploration for better scalability
+* Sparsity is challenging
 
 
 # ArchGym: An Open-Source Gymnasium for Machine Learning Assisted Architecture Design
